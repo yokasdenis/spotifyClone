@@ -1,17 +1,10 @@
-/*header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: black;
-  color: white;
-}*/
+body{
+  background-image: linear-gradient(180deg,black ,black);
+}
 .sidebar {
   background-color: #000000;
   width: 371px;
-  height: 982px;
+  height: 100%;
 }
 
 #logo {
@@ -121,7 +114,6 @@
 
 #featured {
   margin-top: 30px;
-  font-family: DM Sans;
   font-size: 38px;
   font-weight: 700;
   line-height: 49px;
@@ -130,8 +122,8 @@
   color: #ffffff;
 }
 
+
 .featured-sections {
-  font-family: DM Sans;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -199,9 +191,9 @@
   color: #b3b3b3;
 }
 
-footer {
-  width: 100%;
-  height: 80px;
+footer{
+  width: 100% !important;
+  height: 100%;
   border: 1px;
   background-color: #181818ff;
   padding: 5px;
@@ -243,6 +235,7 @@ height: 65px;
   margin-top: 150px;
 }
 .hero-section {
+  width: 100%;
   height: 400px;
   background-image: linear-gradient(180deg, #8daba4ff, #384341ff);
 }
@@ -288,7 +281,6 @@ height: 65px;
   color: #ffffff;
 }
 .hero-section-text-4 {
-  font-family: Circular Std;
   font-size: 15px;
   font-weight: 400;
   line-height: 19px;
@@ -336,7 +328,6 @@ height: 65px;
   height: 40px;
 }
 .playlist-text-1 {
-  font-family: Circular Std;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -352,6 +343,7 @@ height: 65px;
   text-align: left;
   color: #ffffff;
 }
+
 #playlist-date {
   margin-right: 180px;
 }
@@ -359,3 +351,23 @@ height: 65px;
   width: 15px;
   height: 4px;
 }
+
+
+
+
+
+@media screen and (max-width:1024px){
+  .footer-container{
+  flex-direction: column !important;
+  }
+  .hidder{
+    display: none;
+  }
+  .hero-section-text-1{
+    display: none;
+  }
+.hero-section{
+  flex-direction: column;
+}
+}
+  
