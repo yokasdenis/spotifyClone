@@ -110,6 +110,7 @@ body{
 
 #body-container {
   padding: 25px;
+  width: 100%;
 }
 
 #featured {
@@ -356,7 +357,7 @@ height: 65px;
 
 
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:320px ) and (max-width:1024px){
   .footer-container{
   flex-direction: column !important;
   }
